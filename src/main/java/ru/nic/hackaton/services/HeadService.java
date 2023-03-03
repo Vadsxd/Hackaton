@@ -43,7 +43,7 @@ public class HeadService {
 
         result.setAzimuth(fita);
         result.setElevation(angles.get(index));
-        result.setSpeed(v_values[index] * 1000);
+        result.setSpeed(v_values[index]);
 
         return result;
     }
