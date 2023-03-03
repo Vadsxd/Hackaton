@@ -8,8 +8,8 @@ import lombok.Setter;
 @Setter
 public class CalculateRequest {
     @NotNull
-    private long X;
+    private int X;
 
     @NotNull
-    private long Y;
+    private int Y;
 }

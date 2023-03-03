@@ -14,5 +14,5 @@ public class ResultResponse {
     private long elevation;
 
     @NotNull
-    private long speed;
+    private int speed;
 }

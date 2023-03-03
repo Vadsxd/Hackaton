@@ -4,10 +4,7 @@ import io.swagger.annotations.Api;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ru.nic.hackaton.requests.CalculateRequest;
 import ru.nic.hackaton.responses.ResultResponse;
 import ru.nic.hackaton.services.HeadService;
@@ -26,5 +23,10 @@ public class HeadController {
     @PostMapping("/result")
     public ResponseEntity<ResultResponse> calculate(@Valid @RequestBody CalculateRequest request) {
         return ResponseEntity.ok(headService.calculate(request));
+    }
+
+    @GetMapping("/test")
+    public ResponseEntity<String> test() {
+        return ResponseEntity.ok("Hello Tester!");
     }
 }
