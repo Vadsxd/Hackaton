@@ -4,11 +4,6 @@ server:
   error:
     include-message: always
 
-spring:
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
-
 springfox:
   documentation:
     swagger:
